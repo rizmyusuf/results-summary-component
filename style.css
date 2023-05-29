@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: hsla(0, 0%, 100%);
+}
+
+/* RESULT */
+.result {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: hsla(0, 0%, 100%, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  height: 380px;
+  padding: 20px;
+  text-align: justify;
+}
+
+.result h1 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.result div {
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.result div p:first-child {
+  color: hsla(0, 0%, 100%);
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.result > p:first-of-type {
+  font-size: 30px;
+  color: hsla(0, 0%, 100%);
+  margin-bottom: 20px;
+}
+
+.result > p:last-of-type {
+  width: 285px;
+}
+
+/* SUMMARY  */
+.summary {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.box {
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.box p:first-of-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box img {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.box p:last-of-type {
+  color: #333;
+  opacity: 0.8;
+}
+
+.box .bold {
+  font-weight: 700;
+}
+
+.box-1 {
+  color: hsl(0, 100%, 67%);
+  background: hsla(0, 100%, 67%, 0.1);
+}
+.box-2 {
+  color: hsl(39, 100%, 56%);
+  background: hsla(39, 100%, 56%, 0.1);
+}
+.box-3 {
+  color: hsl(166, 100%, 37%);
+  background: hsla(166, 100%, 37%, 0.1);
+}
+.box-4 {
+  color: hsl(234, 85%, 45%);
+  background: hsla(234, 85%, 45%, 0.1);
+}
+
+.btn {
+  background: hsl(224, 30%, 27%);
+  height: 50px;
+  border-radius: 20px;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 500px) {
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+  }
+  .result {
+    width: 50%;
+    border-radius: 10px;
+    height: 437px;
+  }
+  .result > p:last-of-type {
+    width: 250px;
+    text-align: center;
+  }
+  .summary {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 15px 20px 20px hsla(241, 100%, 89%, 0.4);
+  }
+}
